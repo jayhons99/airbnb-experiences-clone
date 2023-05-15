@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.--navbar {
+  background-color: white;
+  margin: 0;
+  padding: 1.5rem;
+  box-shadow: 0px 0.5px 7px black;
+}
+
+.--navbar-logo {
+  width: 82px;
+}
+
+.--navbar-logo:hover {
+  cursor: pointer;
+}
+
+.--photoGrid-image {
+  width: 80%;
+  margin-top: 16px;
+  margin-left: 32px;
+}
+
+.--photoGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.--photoGrid > h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  margin-left: 16px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.--photoGrid > p {
+  font-family: "Poppins", sans-serif;
+  margin-left: 16px;
+  margin-top: 0;
+  width: 75%;
+}
+
+@media only screen and (min-width: 768px) {
+  .--photoGrid-image {
+    width: 600px;
+    align-self: center;
+  }
+  .--photoGrid h1 {
+    font-size: 36px;
+    margin-left: 10%;
+  }
+  .--photoGrid p {
+    margin-left: 10%;
+  }
+}
