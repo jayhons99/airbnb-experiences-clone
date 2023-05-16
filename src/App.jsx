@@ -5,18 +5,7 @@ import testData from "../data";
 
 function App() {
   const cards = testData.map((item) => {
-    return (
-      <Card
-        key={item.id}
-        img={item.coverImg}
-        rating={item.stats.rating}
-        reviewCount={item.stats.reviewCount}
-        location={item.location}
-        title={item.title}
-        price={item.price}
-        openSpots={item.openSpots}
-      />
-    );
+    return <Card key={item.id} item={item} />;
   });
   return (
     <>
