@@ -3,7 +3,7 @@ import star from "../assets/star.png";
 function Card(props) {
   return (
     <div className="--card">
-      <img src={props.img} className="--card-img"></img>
+      <img src={`/src/assets/${props.img}`} className="--card-img"></img>
       <div className="--card-metrics">
         <img src={star} className="--card-star"></img>
         <span>{props.rating}</span>
