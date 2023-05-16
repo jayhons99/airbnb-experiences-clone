@@ -5,6 +5,9 @@ body {
   padding: 0;
 }
 
+.gray {
+  color: #918e9b;
+}
 .--navbar {
   background-color: white;
   margin: 0;
@@ -48,6 +51,40 @@ body {
   width: 75%;
 }
 
+.--card {
+  margin: 16px;
+}
+
+.--card-metrics {
+  display: flex;
+  gap: 3px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.--card-img {
+  width: 176px;
+  border-radius: 5px;
+}
+
+.--card-star {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.--card-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+.--card-title > p {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
 @media only screen and (min-width: 768px) {
   .--photoGrid-image {
     width: 600px;
@@ -58,6 +95,9 @@ body {
     margin-left: 10%;
   }
   .--photoGrid p {
+    margin-left: 10%;
+  }
+  .--card {
     margin-left: 10%;
   }
 }
